@@ -1,0 +1,33 @@
+#log-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  background-image: url("../res/coca-cola-christmas.png");
+  background-position: center;
+}
+
+#log {
+  width: 90%;
+  height: 80%;
+  resize: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 19px;
+  font-family: monospace;
+  background-color: #fff;
+  overflow-y: auto;
+  background-color: #ddd;
+}/*# sourceMappingURL=logs.css.map */

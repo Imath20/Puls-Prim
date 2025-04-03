@@ -1,0 +1,480 @@
+@charset "UTF-8";
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: #f0f8ff;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 300px;
+  padding: 10px;
+  background: #5dbb63;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  right: 0;
+  top: 0;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  z-index: 99;
+}
+.sidebar.hidden {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+#toggleSidebar {
+  position: fixed;
+  right: 313px;
+  top: 370px;
+  background: #ffffff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  -webkit-transition: right 0.3s ease-in-out;
+  transition: right 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.sidebar.hidden + #toggleSidebar {
+  right: 10px;
+}
+
+.hidden button#toggleSidebar {
+  right: 0;
+}
+
+.unitform-container {
+  width: 370px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+  background-color: #f0f0f0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+/* Unitbar */
+.unitbar {
+  padding: 10px;
+  background: #f69697;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 65%;
+          flex: 0 0 65%; /* 61% din înălțimea totală */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+/* Formulabar */
+.formulabar {
+  padding: 10px;
+  background: #0077b6;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 35%;
+          flex: 0 0 35%; /* 39% din înălțimea totală */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+#toggleUniformbar {
+  position: fixed;
+  left: 333px;
+  top: 370px;
+  background: #ffffff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  -webkit-transition: right 0.3s ease-in-out;
+  transition: right 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.unitform-container.hidden + #toggleUniformbar {
+  left: 10px;
+}
+
+.hidden button#toggleUniformbar {
+  left: 0;
+}
+
+.pendulum-container {
+  position: fixed;
+  top: 120px;
+  width: 200px;
+  height: 251px;
+}
+
+.slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.slider-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.support {
+  position: absolute;
+  top: -10;
+  left: -20%;
+  width: 300px;
+  height: 6px;
+  background-color: black;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.string {
+  position: absolute;
+  top: 4.5px;
+  left: calc(50% - 9px);
+  width: 15px;
+  height: 450px;
+  background-image: url("../res/Sfoara.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  z-index: -1;
+}
+
+.ball {
+  position: absolute;
+  bottom: 0;
+  left: 58%;
+  width: 100px;
+  height: 100px;
+  background-image: url("../res/Bila.png");
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -2;
+}
+
+button#toggleslidebar {
+  position: absolute;
+  left: 200px; /* Inițial atașat de meniu */
+  top: 20px;
+  background: #ffcc00;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
+
+/* Starea când meniul este ascuns */
+.slidebar-hidden {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+}
+
+.slidebar-hidden + button {
+  left: 0px; /* Mută butonul la marginea ecranului */
+}
+
+@media (min-width: 2350px) {
+  .support {
+    position: absolute;
+    top: -10;
+    left: -50%;
+    width: 400px;
+    height: 8px;
+    background-color: black;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  .string {
+    position: absolute;
+    top: 4.5px;
+    left: calc(50% - 9px);
+    width: 18px;
+    height: 600px;
+    background-image: url("../res/Sfoara.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    z-index: -1;
+  }
+  .ball {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: url("../res/Bila.png");
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .sidebar {
+    width: 500px;
+    padding: 10px;
+    background: #5dbb63;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .unitbar {
+    width: 500px;
+    padding: 10px;
+    background: #f69697;
+    height: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  .formulabar {
+    width: 500px;
+    padding: 10px;
+    background: #0077b6;
+    height: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    left: 0;
+    top: 55%;
+  }
+  .pendulum-container {
+    position: fixed;
+    top: 120px;
+    width: 200px;
+    height: 251px;
+  }
+  .slider-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .slider-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .button1 {
+    height: 50px;
+    width: auto;
+    font-size: 24px;
+    background-color: #FAEDCD;
+  }
+  .measurement-values {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid black;
+  }
+}
+.swing {
+  -webkit-animation: swing 6s infinite ease-in-out;
+          animation: swing 6s infinite ease-in-out;
+}
+
+.paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  50% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  50% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+}
+.measurement-values {
+  margin-top: 10px;
+  padding: 5px;
+  background: #FAEDCD;
+  border: 1px solid black;
+}
+
+.button1 {
+  height: 30px;
+  width: auto;
+  background-color: #FAEDCD;
+}
+
+.titlemain {
+  position: absolute;
+  top: 0;
+  font-size: 50px;
+}
+
+.subtitlemain {
+  position: absolute;
+  top: 60px;
+  font-size: 50px;
+}
+
+.text1 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --background-color: #f0f8ff;
+  --text-color: black;
+  --pendulum-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode {
+  --background-color: #363636;
+}
+
+.dark-mode .titlemain {
+  color: #f0f8ff;
+}
+
+.dark-mode .subtitlemain {
+  color: #f0f8ff;
+}
+
+.dark-mode .support {
+  background-color: #f0f8ff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  -webkit-transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s;
+}
+
+#chart-container {
+  width: 100%;
+  height: 300px; /* Mai mult spațiu pentru date */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=mainreprezentari.css.map */

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grafice armonice</title>
+  <link rel="stylesheet" href="css1/style.css">
+  <link rel="stylesheet" href="css1/logs.css">
+  <link rel="stylesheet" href="css1/zoom.css">
+  <!-- <link rel="stylesheet" href="css/createpoint.css"> -->
+  <link rel="stylesheet" href="css1/generatepoints.css">
+  <link rel="stylesheet" href="css1/snowflakes.css">
+</head>
+
+<body>
+  <!-- <div id="log-container">
+    <textarea id="log" readonly></textarea>
+  </div> -->
+  <!-- <div id="controls">
+        <button id="zoom-in"><span>+</span></button>
+        <button id="zoom-out"><span>-</span></button>
+      </div> -->
+
+
+  <!-- <div class="create-point">
+      <div class="overlay" id="overlay"></div>
+      <div class="create-point-popup" id="create-point-popup">
+        <div class="popup-content">
+          <h1>Creeaza un punct</h1>
+          <div class="data-input">
+            <div class="section">
+              <label for="letterInput">Litera:</label>
+              <input type="text" id="letterInput">
+              <label for="timeInput">Functii armonice:</label>
+              <div class="time">
+                <label for="amplitudineInput">x = 
+                  <input type="text" id ="amplitudineInput" placeholder="A">
+                <label for="omega1Input">* sin(
+                  <input type="text" id="omega1Input" placeholder="𝛚1">
+                  <label for="timeInput">* </label>
+                <input type="text" id="timeInput" placeholder="t">
+                <label for="timeInput">)</label>
+                </label>
+                </label>
+              </div>
+              <div class="time">
+                <label for="omega2Input">y = A * sin(
+                  <input type="text" id="omega2Input" placeholder="𝛚2">
+                  <label for="timeInput">* </label>
+                <input type="text" id="timeInput" placeholder="t">
+                <label for="timeInput">+  φ0)</label>
+                </label>
+              </div>
+              <label for="colorInput">Culoare:</label>
+              <input type="color" id="colorInput" value="#ff0000">
+            </div>
+          </div>
+          <button id="create-point-btn">Creeaza punct</button>
+          <button class="close-popup-btn" id="close-popup-btn">x</button>
+        </div>
+      </div>
+    </div> -->
+
+  <button class="show-popup-button" id="show-popup-button"><span>+</span></button>
+
+  <div class="generate-points">
+    <div class="overlay" id="overlay"></div>
+    <div class="generate-points-popup" id="generate-points-popup">
+      <div class="popup-content">
+        <h1>Genereaza graficul pendulului</h1>
+        <div class="data-input">
+          <div class="section">
+            <label for="timeInterval">Intervalul de timp:</label>
+            <div id="timeInterval">
+              [ <input type="number" min="-10000" max="10000" id="interval1Input" class="intervalInput" autocomplete="off" placeholder="t0"> , <input type="number" min="-10000"
+                max="10000" id="interval2Input" class="intervalInput" autocomplete="off" placeholder="t"> ]
+            </div>
+            <label>Ecuatia functiei:</label>
+
+            <div class="amplitude">
+              <label for="amplitudeInput">A = </label>
+              <input type="number" id="amplitudeInput" autocomplete="off" placeholder="A">
+            </div>
+            
+            <div class="equation">
+              <label>x = A * sin(</label>
+              <input type="number" id="omegaInput" autocomplete="off" placeholder="𝛚">
+              <label for="omegaInput">* </label>
+              <label for="omegaInput">t + </label>
+              <input type="number" id="phaseInput" autocomplete="off" placeholder="ϕ0">
+              <label for="omegaInput">)</label>
+            </div>
+
+            <label for="colorInput">Culoare:</label>
+            <input type="color" id="colorInput" value="#ff0000">
+          </div>
+        </div>
+        <button id="generate-points-btn">Genereaza graficul</button>
+        <button class="close-popup-btn" id="close-popup-btn">x</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script1.js"></script>
+  <!-- <script src="dragging.js"></script> -->
+  <!-- <script src="zoom.js"></script> -->
+  <!-- <script src="logs.js"></script> -->
+  <!-- <script src="createPoint.js"></script> -->
+  <script src="generatePoints.js"></script>
+  <script src="zoom2.js"></script>
+  <!-- <script src="snowflakes.js"></script> -->
+</body>
+
+</html>

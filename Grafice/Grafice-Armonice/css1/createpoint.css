@@ -1,0 +1,153 @@
+.show-popup-button {
+  all: unset;
+  position: fixed;
+  bottom: 3em;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
+}
+
+.show-popup-button:hover {
+  background-color: #006adb;
+  box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.create-point-popup {
+  all: unset;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  height: 60%;
+  transform: translate(-50%, -50%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: 3.5px solid white;
+}
+.create-point-popup .popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+.create-point-popup .popup-content h1 {
+  margin: 25px;
+  font-size: 1.5em;
+}
+.create-point-popup .popup-content .data-input {
+  display: flex;
+  flex-direction: row;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 100%;
+}
+.create-point-popup .popup-content .data-input .section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.create-point-popup .popup-content .data-input .section label {
+  font-size: 23px;
+}
+.create-point-popup .popup-content .data-input .section input[type=text],
+.create-point-popup .popup-content .data-input .section input[type=date],
+.create-point-popup .popup-content .data-input .section input[type=number] {
+  all: unset;
+  width: 25px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 3px;
+}
+.create-point-popup .popup-content .data-input .section input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: unset;
+          appearance: unset;
+}
+.create-point-popup .popup-content .data-input .section input[type=number]::-webkit-outer-spin-button, .create-point-popup .popup-content .data-input .section input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.create-point-popup .popup-content .data-input .section input[type=checkbox] {
+  width: 40px;
+  height: 40px;
+}
+.create-point-popup .popup-content .data-input .section .date-section {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.create-point-popup .popup-content .data-input .section .date-section button#set-current-date-button {
+  width: 80px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.5em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+.create-point-popup .popup-content .data-input .section .date-section button#set-current-date-button:hover {
+  background-color: #333333;
+  border: 1px solid white;
+}
+.create-point-popup .popup-content button#create-point-btn {
+  color: white;
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 0.6em 1.2em;
+  font-size: 0.85em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+.create-point-popup .popup-content button#create-point-btn:hover {
+  background-color: #333333;
+}
+.create-point-popup .popup-content button.close-popup-btn {
+  all: unset;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 24px;
+  height: 24px;
+  font-weight: 800;
+}

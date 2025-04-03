@@ -1,0 +1,430 @@
+.show-popup-button {
+  all: unset;
+  position: fixed;
+  bottom: 3em;
+  right: 150px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
+          box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
+}
+
+.show-popup-button:hover {
+  background-color: #006adb;
+  -webkit-box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
+          box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
+}
+
+.delete-popup-button {
+  all: unset;
+  position: fixed;
+  bottom: 3em;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
+          box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
+}
+
+.delete-popup-button:hover {
+  background-color: #006adb;
+  -webkit-box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
+          box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
+}
+
+.delete-point-line-popup {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 3.5px solid white;
+}
+.delete-point-line-popup .popup-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.delete-point-line-popup .popup-content h1 {
+  text-align: center;
+}
+.delete-point-line-popup .popup-content .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.delete-point-line-popup .popup-content .section label {
+  font-size: 18px;
+}
+.delete-point-line-popup .popup-content .section input {
+  all: unset;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px;
+}
+.delete-point-line-popup .popup-content button {
+  all: unset;
+  color: white;
+  background-color: #1a1a1a;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+}
+.delete-point-line-popup .popup-content button:hover {
+  background-color: #333333;
+}
+
+.create-point-popup {
+  all: unset;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25%;
+  height: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  border: 3.5px solid white;
+}
+.create-point-popup .popup-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.create-point-popup .popup-content h1 {
+  margin: 0 0 15px 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+.create-point-popup .popup-content .data-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 100%;
+}
+.create-point-popup .popup-content .data-input .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.create-point-popup .popup-content .data-input .section label {
+  font-size: 22px;
+}
+.create-point-popup .popup-content .data-input .section input[type=text],
+.create-point-popup .popup-content .data-input .section input[type=date],
+.create-point-popup .popup-content .data-input .section input[type=number] {
+  all: unset;
+  width: 38px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 3px;
+}
+.create-point-popup .popup-content .data-input .section input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: unset;
+          appearance: unset;
+}
+.create-point-popup .popup-content .data-input .section input[type=number]::-webkit-outer-spin-button, .create-point-popup .popup-content .data-input .section input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.create-point-popup .popup-content .data-input .section input[type=checkbox] {
+  width: 40px;
+  height: 40px;
+}
+.create-point-popup .popup-content .data-input .section .date-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 12px;
+}
+.create-point-popup .popup-content .data-input .section .date-section button#set-current-date-button {
+  width: 80px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.5em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+.create-point-popup .popup-content .data-input .section .date-section button#set-current-date-button:hover {
+  background-color: #333333;
+  border: 1px solid white;
+}
+.create-point-popup .popup-content button#create-point-btn {
+  color: white;
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 0.6em 1.2em;
+  font-size: 0.85em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+  margin-left: 60px;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+.create-point-popup .popup-content button#create-point-btn:hover {
+  background-color: #333333;
+}
+.create-point-popup .popup-content button.close-popup-btn {
+  all: unset;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 24px;
+  height: 24px;
+  font-weight: 800;
+}
+
+.line-input {
+  margin-top: 20px;
+}
+.line-input label {
+  font-size: 18px;
+  background-color: #1a1a1a;
+}
+.line-input input[type=text],
+.line-input input[type=color] {
+  all: unset;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+button#create-line-btn {
+  color: white;
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 0.6em 1.2em;
+  font-size: 0.85em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+  margin-left: 60px;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+button#create-line-btn:hover {
+  background-color: #333333;
+}
+
+.triangle-input {
+  margin-top: 20px;
+  margin-top: 20px;
+}
+.triangle-input label {
+  font-size: 18px;
+  background-color: #1a1a1a;
+}
+.triangle-input input[type=text],
+.triangle-input input[type=color] {
+  all: unset;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* Stiluri pentru butonul de creare triunghi */
+button#create-triangle-btn {
+  color: white;
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 0.6em 1.2em;
+  font-size: 0.85em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+  margin-left: 60px;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+button#create-triangle-btn:hover {
+  background-color: #333333;
+}
+
+.section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.section1 label {
+  font-size: 23px;
+}
+.section1 input[type=text],
+.section1 input[type=date],
+.section1 input[type=number] {
+  all: unset;
+  width: 300px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 3px;
+}
+.section1 input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: unset;
+          appearance: unset;
+}
+.section1 input[type=number]::-webkit-outer-spin-button, .section1 input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.section1 input[type=checkbox] {
+  width: 40px;
+  height: 40px;
+}
+.section1 .date-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 12px;
+}
+.section1 .date-section button#set-current-date-button {
+  width: 80px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.5em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+.section1 .date-section button#set-current-date-button:hover {
+  background-color: #333333;
+  border: 1px solid white;
+}/*# sourceMappingURL=createpoint.css.map */

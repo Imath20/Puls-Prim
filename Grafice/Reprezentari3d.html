@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/mainreprezentari.css">
+    <title>Pendulul Oscilator</title>
+</head>
+<body>
+    <b class="titlemain">Pendulul Oscilator</b>
+    <button id="toggleSidebar">></button>
+   <div class="sidebar">
+        <div class="slider-container">
+            <div class="slider-label">
+                <span class="text1">Amplitudine:</span>
+                <span id="amplitude-value" class="text1">30cm</span>
+            </div>
+            <input type="range" id="amplitude" min="10" max="60" value="30">
+        </div>
+        <div class="slider-container">
+            <div class="slider-label">
+                <span class="text1">Viteză:</span>
+                <span id="speed-value" class="text1">10x</span>
+            </div>
+            <input type="range" id="speed" min="1" max="15" value="10">
+        </div>
+        <div class="slider-container">
+            <div class="slider-label">
+                <span class="text1">Lungime fir:</span>
+                <span id="lengthValue" class="text1">450</span>
+            </div>
+            <input type="range" id="lengthSlider" min="200" max="600" value="450">
+        </div>
+        <button onclick="startOscillation()" class="button1">Start</button>
+        <button id="pauseResumeBtn" onclick="togglePauseResume()" class="button1">Pauză</button>
+        <button onclick="stopOscillation()" class="button1">Stop</button>
+        <button onclick="toggleMeasuringTool()" class="button1">Măsoară</button>
+        <div class="measurement-values" id="measurement-values">
+            <p>L(lungimea): <span id="measured-length">-</span></p>
+            <p>A (Amplitudine): <span id="measured-amplitude">-</span></p>
+            <p>t (timpul): <span id="measured-time">-</span></p>
+            <p>x (Vector deplasare):<span id="measured-x">-</span></p>
+            <p>v (Viteză-setare):<span id="measured-speed">-</span></p>
+            <p>φ0 (Unghi): <span id="measured-angle">-</span></p>
+            <p>𝛚 (Pulsatia): <span id="measured-angular-velocity">-</span></p>
+            <p>v (Viteză oscilatorie): <span id="measured-velocity">-</span></p>
+            <p>a (Accelerație): <span id="measured-acceleration">-</span></p>
+            <p>Ec (Energia cinetica): <span id="measured-kineticenergy">-</span></p>
+            <div id="chart-container">
+                <canvas id="pendulumChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="sidebarleft">
+        <button id="toggleUniformbar"><</button>
+        <div class="unitform-container">
+    <div class="unitbar">
+        <span class="text1">Unitati de masura:</span>
+        <div class="measurement-values" id="measurement-values">
+            <p>L(lungimea) - m (metru)</p>
+            <p>A (Amplitudine) - m(metru) </p>
+            <p>t (timpul) - s(secunda) </p>
+            <p>x (Vector deplasare) - m(metru)</p>
+            <p>v (Viteză-setare) - x (viteza de redare)</p>
+            <p>φ0 (Unghi) - ° (grade)</p>
+            <p>𝛚 (Pulsatia)  - rad/ s (radian pe secunda) </p>
+            <p>v (Viteză oscilatorie) - m/s (metru pe secunda)</p>
+            <p>a (Accelerație) - m/s²(metru pe secunda la a doua) </p>
+            <p>Ec(Energia cinetica) - J(joule)</p>
+        </div>
+    </div>
+    <div class="formulabar">
+        <span class="text1">Formule:</span>
+        <div class="measurement-values" id="measurement-values">
+            <p>x = A sin (ωt + φo)</p>
+            <p>v = ωA cos( ωt + φo) </p>
+            <p>a = -ω²A sin( ωt + φo)  </p>
+            <p>\( \omega = \sqrt{\frac{g}{L}} \)</p>
+            <p>\(E_c = \frac{ m v^2}{2}\)</p>
+        </div>
+        <button id="themeToggle" class="button2">🌙 Schimbă tema</button>
+        </div>
+    </div>
+  </div>
+    <div class="pendulum-container">
+        <div class="support" id ="support">
+        <div class="string" id="string">
+            <div class="ball" id="ball"></div>
+        </div>
+        </div>
+        <!-- <div id="shadow"></div> -->
+    </div>
+    
+</body>
+<script src="Script-pendul.js"></script>
+<script src="Tema.js"></script>
+<script type="text/javascript" async 
+  src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" async 
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</html>

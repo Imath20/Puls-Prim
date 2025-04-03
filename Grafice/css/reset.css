@@ -1,0 +1,123 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, tdvideo, tt, u, ul, var {
+	background:transparent;
+	border:0 none;
+	font-size:100%;
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	vertical-align:top;
+}
+ol, ul {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+table, table td {
+	padding:0;
+	border:none;
+	border-collapse:collapse;
+}
+img {
+	vertical-align:top;
+}
+embed {
+	vertical-align:top;
+}
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {
+	display:block;
+}
+mark, rp, rt, ruby, summary, time {
+	display:inline;
+}
+input, textarea {
+	border:0;
+	padding:0;
+	margin:0;
+	outline: 0;
+}
+iframe {
+	border:0;
+	margin:0;
+	padding:0;
+}
+input, textarea, select {
+	margin:0;
+	padding:0px;
+}
+/* Media query pentru telefoane (lățimi de până la 767px) */
+@media (max-width: 767px) {
+    /* Resetare stiluri globale */
+    a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, td, video, tt, u, ul, var {
+        background: transparent;
+        border: 0 none;
+        font-size: 100%; /* Asigură o dimensiune fontului de bază pe telefoane */
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        vertical-align: top;
+    }
+    
+    /* Listă */
+    ol, ul {
+        list-style: none;
+        padding-left: 0; /* Elimină padding-ul implicit pentru liste */
+    }
+
+    /* Citări */
+    blockquote, q {
+        quotes: none;
+        margin: 0; /* Elimină marginea pentru o mai bună integrare pe ecrane mici */
+    }
+
+    /* Tabele */
+    table, table td {
+        padding: 0;
+        border: none;
+        border-collapse: collapse;
+    }
+
+    /* Imagini și elemente încorporate */
+    img, embed {
+        vertical-align: top;
+        max-width: 100%; /* Asigură că imaginile nu depășesc lățimea ecranului */
+        height: auto; /* Menține raportul de aspect */
+    }
+
+    /* Elementele HTML5 */
+    article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {
+        display: block;
+    }
+
+    mark, rp, rt, ruby, summary, time {
+        display: inline;
+    }
+
+    /* Input-uri și texte */
+    input, textarea {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        width: 100%; /* Asigură că input-urile și textarea-urile se ajustează pe ecrane mici */
+        box-sizing: border-box; /* Include padding-ul și border-ul în lățime */
+    }
+
+    /* Iframe-uri */
+    iframe {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        max-width: 100%; /* Asigură că iframe-urile nu depășesc lățimea ecranului */
+        height: auto; /* Ajustează înălțimea în funcție de conținutul iframe-ului */
+    }
+
+    /* Selectoare */
+    select {
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Asigură că selectoarele se ajustează pe ecrane mici */
+        box-sizing: border-box; /* Include padding-ul și border-ul în lățime */
+    }
+}

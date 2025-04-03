@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulare Cutremur</title>
+    <link rel="stylesheet" href="css/Cutremur.css">
+</head>
+<body>
+    <b class="titlemain">Simulator de seisme</b>
+    <button id="toggleSidebar">☰</button>
+    <div id="sidebar" class="sidebar hidden">
+    <h2>Calculator timp</h2>
+    <div class="measurement-values">
+    <label>Vp(km/ s) - [5,10] km/s: <input type="number" id="vp" value="5"></label>
+    <label>Vs(km/ s) - [2,5] km/s: <input type="number" id="vs" value="3"></label>
+    <label>Distanta(km) - d < 10 km: <input type="number" id="dist" value="3"></label>
+    </div>
+    <button id="calculateBtn">Calculează</button>
+    <div class="measurement-values">
+    <label>Timp1: <span id="t1output" class="text-main"></span></label>
+    <label>Timp2: <span id="t2output" class="text-main"></span></label>
+    <label>Δt: <span id="dtoutput" class="text-main"></span></label>
+    </div>
+    
+    </div>
+    <button id="toggleUnitformbar">☰</button>
+    <div id="unitformbar" class="unitformbar hidden">
+    <h2>Unităţi de măsură</h2>
+    <div class="measurement-values" id="measurement-values">
+        <p>D- distanta dintre punctul de referinta si epicentru - km(kilometru)</p>
+        <p>Vp- Viteza undei primare(p) - km/s </p>
+        <p>Vs- Viteza undei secundare(s) - km/s</p>
+        <p>Timp1 - timpul in care ajunge unda p la punctul de referinta - s(secunde)</p>
+        <p>Timp2 - timpul in care ajunge unda s la punctul de referinta - s(secunde)</p>
+        <p>Δt - diferenta de timp dintre cele 2 unde</p>
+        <p>𝛚 - pulsatia(viteza de variatie a fazei temporale) - rad/s</p>
+        <p>k - numarul de unda - rad/m </p>
+        <p>λ - lungimea de unda - m(metri)</p>
+        <p>T - perioada- s(secunde)</p>
+        <p>𝝼 - frecventa - Hz(herz- 1/s)</p>
+        <p>v - viteza de faza - m/s</p>
+    </div>
+    <h2>Formule</h2>
+    <div class="measurement-values" id="measurement-values">
+        <p>d = vp ⋅ t1</p>
+        <p>d = vs ⋅ t2 </p>
+        <p>Δt = t2 - t1</p>
+        <p style=" padding-right: 150px;">\[ \Delta t = \frac{d \cdot (v_p - v_s)}{v_p \cdot v_s} \]</p>
+        <p style=" padding-right: 220px;">\[ \omega = \frac{2\pi}{T} \]</p>
+        <p  style=" padding-right: 220px;"> \[k = \frac{2\pi}{\lambda}\]</p>
+        <p style=" padding-right: 220px;"> \[\frac{\omega}{k} = \frac{\lambda}{T}\]</p>
+        <p style=" padding-right: 220px;"> \[v = \frac{\omega}{k}\]</p>
+        <p style=" padding-right: 220px;"> $$\nu = \frac{1}{T}$$</p>
+    </div>
+    <h2>Observaţii</h2>
+    <div class="measurement-values" id="measurement-values">
+        <p>vp > vs</p>
+        <p>P - unde primare, longitudinale, culoare galbena in simulare</p>
+        <p>S - unde secundare, transversale, culoare albastra in simulare</p>
+        <p>Undele P: Contribuie la aproximativ 10-20% din daunele unui cutremur. Sunt rapide, dar transmit mai puțină energie distructivă la suprafață.</p>
+        <p>Undele S: Responsabile pentru aproximativ 80-90% din distrugeri. Vibrațiile lor transversale sunt mult mai periculoase pentru structuri.</p>
+    </div>
+    </div>
+    <div id="scene-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="Cutremur.js"></script>
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script scr="tema.js"></script>
+</body>
+</html>

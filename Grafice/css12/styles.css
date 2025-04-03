@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-between; /* Plasează galeriile stânga și dreapta */
+    align-items: flex-start; /* Aliniază imaginile la începutul containerului */
+    flex-wrap: wrap;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.gallery-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    padding: 10px;
+}
+.gallery-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    padding: 10px;
+}
+
+.gallery-left,
+.gallery-right {
+    flex: 1; /* Permite fiecărei secțiuni să ocupe spațiu egal */
+    width: 40%; /* Fiecare coloană ocupă aproape 50% din lățimea containerului */
+    margin: 0 10px; /* Adaugă un spațiu între coloane */
+}
+
+.gallery-item {
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.class1 {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Media Queries pentru ecrane mici */
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column; /* Pe ecrane mici, aranjează imaginile pe verticală */
+        align-items: center; /* Centrează galeriile pe ecrane mici */
+    }
+
+    .gallery-left,
+    .gallery-right {
+        width: 100%; /* Pe ecrane mici, fiecare coloană ocupă 100% din lățimea containerului */
+        padding: 0px;
+        margin: 0 0px; /* Adaugă un spațiu între coloane */
+    }
+}

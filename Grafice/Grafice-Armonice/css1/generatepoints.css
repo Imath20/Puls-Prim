@@ -1,0 +1,147 @@
+.show-popup-button {
+  all: unset;
+  position: fixed;
+  bottom: 1.5em;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
+}
+
+.show-popup-button:hover {
+  background-color: #006adb;
+  box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.generate-points-popup {
+  all: unset;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22.5%;
+  height: 60%;
+  transform: translate(-50%, -50%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: 3.5px solid white;
+}
+.generate-points-popup .popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+.generate-points-popup .popup-content h1 {
+  margin: 25px;
+  font-size: 1.5em;
+}
+.generate-points-popup .popup-content .data-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 100%;
+}
+.generate-points-popup .popup-content .data-input .section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.generate-points-popup .popup-content .data-input .section label {
+  font-size: 23px;
+}
+.generate-points-popup .popup-content .data-input .section input {
+  font-size: 23px;
+}
+.generate-points-popup .popup-content .data-input .section input::-moz-placeholder {
+  font-size: 18px;
+}
+.generate-points-popup .popup-content .data-input .section input::placeholder {
+  font-size: 18px;
+}
+.generate-points-popup .popup-content .data-input .section input[type=text],
+.generate-points-popup .popup-content .data-input .section input[type=date],
+.generate-points-popup .popup-content .data-input .section input[type=number] {
+  all: unset;
+  width: 25px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 3px;
+}
+.generate-points-popup .popup-content .data-input .section input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: unset;
+          appearance: unset;
+}
+.generate-points-popup .popup-content .data-input .section input[type=number]::-webkit-outer-spin-button, .generate-points-popup .popup-content .data-input .section input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.generate-points-popup .popup-content .data-input .section input[type=checkbox] {
+  width: 40px;
+  height: 40px;
+}
+.generate-points-popup .popup-content .data-input .section .amplitude {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+.generate-points-popup .popup-content button#generate-points-btn {
+  color: white;
+  width: 250px;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 0.6em 1.2em;
+  font-size: 0.85em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+.generate-points-popup .popup-content button#generate-points-btn:hover {
+  background-color: #333333;
+}
+.generate-points-popup .popup-content button.close-popup-btn {
+  all: unset;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 24px;
+  height: 24px;
+  font-weight: 800;
+}
