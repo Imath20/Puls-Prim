@@ -1,0 +1,63 @@
+
+#controls {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+}
+
+/* #zoom-in, #zoom-out {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#zoom-in:hover, #zoom-out:hover {
+  background-color: crimson;
+} */
+
+#zoom-in, #zoom-out {
+  all: unset;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
+  font-weight: 800;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
+}
+
+#zoom-in:hover, #zoom-out:hover {
+  background-color: #006adb;
+  box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+  user-select: none; /* Dezactivează selectarea textului */
+  cursor: grab; /* Cursor pentru dragging */
+}
+
+svg:active {
+  cursor: grabbing; /* Cursor în timpul dragging-ului */
+}

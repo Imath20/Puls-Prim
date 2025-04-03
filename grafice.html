@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grafice armonice</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/logs.css">
+  <link rel="stylesheet" href="css/zoom.css">
+  <link rel="stylesheet" href="css/createpoint.css">
+  <link rel="stylesheet" href="css/snowflakes.css">
+  <link rel="stylesheet" href="css/clock.css">
+  <link rel="icon" href="res/G.png" type="x-icon">
+  <audio autoplay loop>
+    <source src="res\you_slowed.mp3" type="audio/mp3">
+    <source src="res\you_slowed.ogg" type="audio/ogg">
+  </audio>
+  <div class="clock" id="clock">00:00:00</div>
+</head>
+
+<body>
+
+  <div id="log-container">
+
+    <!-- Păstrăm doar acest textarea pentru log-uri -->
+    <textarea id="log" readonly></textarea>
+  </div>
+  <button class="audio-play-button audio-toggle-button" onclick="toggleAudio()"> <img id="audio-icon"
+      src="res/Speaker.png" alt="Speaker" width="30"></button>
+  <button class="show-popup-button" id="show-popup-button"><span>+</span></button>
+  <div class="create-point">
+    <div class="overlay" id="overlay"></div>
+    <div class="create-point-popup" id="create-point-popup">
+      <!-- Litera punctului, Timpul, Culoarea -->
+      <div class="popup-content">
+        <h1>Creeaza un punct</h1>
+        <div class="data-input">
+          <div class="section">
+            <label for="letterInput">Litera:</label>
+            <input type="text" id="letterInput">
+            <label for="timeInput">Functii armonice:</label>
+            <div class="time">
+              <label for="amplitudineInput">x =
+                <input type="text" id="amplitudineInput" placeholder="A">
+                <label for="omega1Input">* sin(
+                  <input type="text" id="omega1Input" placeholder="𝛚1">
+                  <label for="timeInput">* </label>
+                  <input type="text" id="timeInput" placeholder="t">
+                  <label for="timeInput">)</label>
+                </label>
+              </label>
+            </div>
+            <div class="time2">
+              <label for="omega2Input">y = A * sin(
+                <input type="text" id="omega2Input" placeholder="𝛚2">
+                <label for="time2Input">* </label>
+                <input type="text" id="time2Input" placeholder="t">
+                <label for="time2Input">+
+                  <label for="unghiulinitial">
+                    <input type="text" id="unghiulinitialInput" placeholder="φ0">
+                  </label>
+                  )</label>
+              </label>
+            </div>
+            <label for="colorInput">Culoare:</label>
+            <input type="color" id="colorInput" value="#ff0000">
+          </div>
+        </div>
+        <button id="create-point-btn">Creeaza punct</button>
+
+        <h1>Creează o linie</h1>
+        <div class="data-input">
+          <div class="section1">
+            <label for="pointAInput">Punct A:</label>
+            <input type="text" id="pointAInput" placeholder="Index punct A">
+            <label for="pointBInput">Punct B:</label>
+            <input type="text" id="pointBInput" placeholder="Index punct B">
+            <label for="lineColorInput">Culoare linie:</label>
+            <input type="color" id="lineColorInput" value="#ff0000">
+          </div>
+        </div>
+        <button id="create-line-btn">Creează linie</button>
+        <h1>Creează un triunghi</h1>
+        <div class="data-input">
+          <div class="section1">
+            <label for="point1Input">Punct A:</label>
+            <input type="text" id="point1Input" placeholder="Index punct A">
+            <label for="point2Input">Punct B:</label>
+            <input type="text" id="point2Input" placeholder="Index punct B">
+            <label for="point3Input">Punct C:</label>
+            <input type="text" id="point3Input" placeholder="Index punct C">
+            <label for="triangleColorInput">Culoare triunghi:</label>
+            <input type="color" id="triangleColorInput" value="#00ff00">
+          </div>
+        </div>
+        <button id="create-triangle-btn">Creează triunghi</button>
+        <button class="close-popup-btn" id="close-popup-btn">x</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <button class="delete-popup-button" id="open-delete-popup-btn"><span>-</span></button>
+  <div class="delete-point-line-popup" id="delete-point-line-popup">
+    <div class="popup-content">
+      <h1>Șterge un punct sau o linie</h1>
+      <div class="data-input">
+        <div class="section">
+          <label for="deletePointIndex">Index punct:</label>
+          <input type="number" id="deletePointIndex" placeholder="Index punct">
+          <button id="delete-point-btn-popup">Șterge punct</button>
+        </div>
+        <div class="section">
+          <label for="deleteLinePointA">Index punct A:</label>
+          <input type="number" id="deleteLinePointA" placeholder="Index punct A">
+          <label for="deleteLinePointB">Index punct B:</label>
+          <input type="number" id="deleteLinePointB" placeholder="Index punct B">
+          <button id="delete-line-btn-popup">Șterge linie</button>
+        </div>
+      </div>
+      <button class="close-popup-btn" id="close-delete-popup-btn">x</button>
+    </div>
+  </div>
+
+  </div>
+
+
+  <!-- <div class="snowflakes" id="snowflakes">
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❆</div>
+    </div> -->
+
+  <div class="snowlfkaes" id="snowflakes">
+
+  </div>
+
+  <!-- <div class="snowflakes">
+      <ul id="jsi-snows" class="g-snows">
+      
+      </ul>
+    </div> -->
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+  <script src="melodie.js"></script>
+  <script src="zoom.js"></script>
+  <script src="createPoint.js"></script>
+  <script src="math.js"></script>
+  <script src="delete.js"></script>
+  <script src="createtriangle.js"></script>
+  <script src="logs.js"></script>
+  <script src="snowflakes.js"></script>
+  <script src="clock.js"></script>
+</body>
+
+</html>

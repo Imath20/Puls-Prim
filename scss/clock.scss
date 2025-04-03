@@ -1,0 +1,74 @@
+.clock {
+    all: unset;
+    position: fixed;
+    left: 10px; /* Poziționat în stânga */
+    top: 10px; /* Poziționat sus */
+    width: 150px; /* Dimensiune mai mare pentru un aspect de lux */
+    height: 150px;
+    border-radius: 50%; /* Formă circulară */
+    background-image: url("../res/snowflake.jpg");
+    background-size:180%;
+    background-position: right;
+    color: black;
+    font-size: 24px; /* Text ușor mai mare */
+    font-weight: bold;
+    border: 5px solid #6879D0;
+    cursor: default;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(34, 58, 245, 0.5), inset 0 0 15px rgba(28, 39, 249, 0.5);
+    text-align: center;
+    overflow: hidden; /* Ascunde ornamentele care pot depăși marginile */
+    position: fixed;
+  }
+  
+  .clock:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 0, 255, 0.4);
+    z-index: -1;
+  }
+  
+  /* Ornamente de diamante */
+  .clock .diamonds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    pointer-events: none; /* Diamantele nu blochează interacțiunile */
+  }
+  
+  .clock .diamonds div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: sparkle 2s infinite ease-in-out;
+  }
+  
+  /* Poziționarea diamantelor */
+  .clock .diamonds div:nth-child(1) { grid-area: 1 / 2; }
+  .clock .diamonds div:nth-child(2) { grid-area: 2 / 1; }
+  .clock .diamonds div:nth-child(3) { grid-area: 2 / 4; }
+  .clock .diamonds div:nth-child(4) { grid-area: 4 / 2; }
+  
+  /* Animația diamantelor */
+  @keyframes sparkle {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.3);
+      opacity: 0.6;
+    }
+  }
+  

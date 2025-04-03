@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    overflow: hidden; // Elimină scroll-ul
+    background: #ffffff;
+}
+
+#scene-container {
+    width: 100vw;
+    height: 100vh;
+    touch-action: none; // Dezactivează scroll-ul pe dispozitive mobile
+}
+
+#toggleSidebar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #5dbb63;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    z-index: 1100;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background: #5dbb63;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    overflow-y: auto;
+    right: -300px; // Ascuns inițial
+    top: 0;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+
+    h2 {
+        color: black;
+        text-align: center;
+    }
+
+    label {
+        color: black;
+        font-size: 18px;
+    }
+
+    input {
+        width: 95%;
+        padding: 5px;
+        margin-top: 5px;
+        border: none;
+        border-radius: 3px;
+    }
+
+
+    output {
+        width: 95%;
+        padding: 5px;
+        margin-top: 5px;
+        border: none;
+        border-radius: 3px;
+    }
+    button {
+        padding: 10px;
+        background: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.sidebar.visible {
+    right: 0;
+}
+
+
+#toggleUnitformbar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #f69697;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    z-index: 1100;
+}
+
+.unitformbar {
+    width: 300px;
+    padding: 20px;
+    background: #f69697;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    overflow-y: auto;
+    left: -300px;
+    top: 0;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+    top:-30px;
+
+
+.unitformbar, h2 {
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.unitformbar, label {
+    color: white;
+    font-size: 16px;
+}
+
+.unitformbar, input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.unitformbar, button {
+    padding: 10px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+}   
+
+.unitformbar.visible {
+    left: 0;
+}
+
+.measurement-values {
+    margin-top: 10px;
+    padding: 5px;
+    background: #FAEDCD;
+    border: 1px solid black;
+}
+.measurement-values span{
+    display: block;
+    margin-bottom: 10px;
+}
+.text-main{
+    font-size: 20px;
+    color: black;
+}
+.titlemain{
+    position: fixed;
+    top: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+  }
+  

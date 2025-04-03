@@ -1,0 +1,372 @@
+.container_12 {
+	margin-left:auto;
+	margin-right:auto;
+	width:1240px;
+}
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .grid_13{
+	display:inline;
+	float:left;
+	position:relative;
+	margin:0 10px
+}
+.grid_4 {
+    display: block; /* Afișează grid_4 pe ecrane mari */
+}
+
+.grid_14 {
+    display: none; /* Ascunde grid_14 pe ecrane mari */
+}
+.alpha {
+	margin-left:0
+}
+.omega {
+	margin-right:0
+}
+.container_12 .grid_1 {
+	width:60px
+}
+.container_12 .grid_2 {
+	width:140px
+}
+.container_12 .grid_3 {
+	width:220px
+}
+.container_12 .grid_4 {
+	width:300px
+}
+.container_12 .grid_5 {
+	width:380px
+}
+.container_12 .grid_6 {
+	width:460px
+}
+.container_12 .grid_7 {
+	width:540px
+}
+.container_12 .grid_8 {
+	width:620px
+}
+.container_12 .grid_9 {
+	width:700px
+}
+.container_12 .grid_10 {
+	width:780px
+}
+.container_12 .grid_11 {
+	width:860px
+}
+.container_12 .grid_12 {
+	width:940px
+}
+.container_12 .grid_13{
+	width:940px;
+}
+.container_12 .prefix_1 {
+	padding-left:80px
+}
+.container_12 .prefix_2 {
+	padding-left:160px
+}
+.container_12 .prefix_3 {
+	padding-left:240px
+}
+.container_12 .prefix_4 {
+	padding-left:320px
+}
+.container_12 .prefix_5 {
+	padding-left:400px
+}
+.container_12 .prefix_6 {
+	padding-left:480px
+}
+.container_12 .prefix_7 {
+	padding-left:560px
+}
+.container_12 .prefix_8 {
+	padding-left:640px
+}
+.container_12 .prefix_9 {
+	padding-left:720px
+}
+.container_12 .prefix_10 {
+	padding-left:800px
+}
+.container_12 .prefix_11 {
+	padding-left:880px
+}
+.container_12 .suffix_1 {
+	padding-right:80px
+}
+.container_12 .suffix_2 {
+	padding-right:160px
+}
+.container_12 .suffix_3 {
+	padding-right:240px
+}
+.container_12 .suffix_4 {
+	padding-right:320px
+}
+.container_12 .suffix_5 {
+	padding-right:400px
+}
+.container_12 .suffix_6 {
+	padding-right:480px
+}
+.container_12 .suffix_7 {
+	padding-right:560px
+}
+.container_12 .suffix_8 {
+	padding-right:640px
+}
+.container_12 .suffix_9 {
+	padding-right:720px
+}
+.container_12 .suffix_10 {
+	padding-right:800px
+}
+.container_12 .suffix_11 {
+	padding-right:880px
+}
+.container_12 .push_1 {
+	left:80px
+}
+.container_12 .push_2 {
+	left:160px
+}
+.container_12 .push_3 {
+	left:240px
+}
+.container_12 .push_4 {
+	left:320px
+}
+.container_12 .push_5 {
+	left:400px
+}
+.container_12 .push_6 {
+	left:480px
+}
+.container_12 .push_7 {
+	left:560px
+}
+.container_12 .push_8 {
+	left:640px
+}
+.container_12 .push_9 {
+	left:720px
+}
+.container_12 .push_10 {
+	left:800px
+}
+.container_12 .push_11 {
+	left:880px
+}
+.container_12 .pull_1 {
+	left:-80px
+}
+.container_12 .pull_2 {
+	left:-160px
+}
+.container_12 .pull_3 {
+	left:-240px
+}
+.container_12 .pull_4 {
+	left:-320px
+}
+.container_12 .pull_5 {
+	left:-400px
+}
+.container_12 .pull_6 {
+	left:-480px
+}
+.container_12 .pull_7 {
+	left:-560px
+}
+.container_12 .pull_8 {
+	left:-640px
+}
+.container_12 .pull_9 {
+	left:-720px
+}
+.container_12 .pull_10 {
+	left:-800px
+}
+.container_12 .pull_11 {
+	left:-880px
+}
+.clear {
+	clear:both;
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+.clearfix:after {
+	clear:both;
+	content:' ';
+	display:block;
+	font-size:0;
+	line-height:0;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+.clearfix {
+	display:inline-block
+}
+* html .clearfix {
+	height:1%
+}
+.clearfix {
+	display:block
+}
+/* Media query pentru telefoane (lățimi de până la 767px) */
+@media (max-width: 768px) {
+    /* Container */
+    .container_12 {
+        width: 100%; /* Lățimea containerului pentru ecrane mici */
+        padding-left: 10px; /* Padding pentru a preveni aglomerarea la margini */
+        padding-right: 10px; /* Padding pentru a preveni aglomerarea la margini */
+        box-sizing: border-box; /* Include padding-ul în lățimea totală */
+        margin-left: auto;
+        margin-right: auto;
+        display: flex; /* Transformă containerul într-un container Flex */
+        flex-direction: column; /* Afișează elementele vertical */
+    }
+
+    /* Grile */
+    .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .grid_13, .grid_14 {
+        width: 100%; /* Lățime completă pentru grile pe ecrane mici */
+        float: none; /* Elimină float-ul pentru a preveni suprapunerea */
+        margin: 0; /* Elimină marginile laterale */
+    }
+    .grid_4 {
+        display: none; /* Ascunde grid_4 pe ecrane mici */
+    }
+
+    .grid_14 {
+        display: block; /* Afișează grid_14 pe ecrane mici */
+    }
+    .pagina-curenta .grid_4 {
+        display: block; /* Asigură-te că grid_4 este ascuns pe ecrane mici în pagina curentă */
+    }
+
+    .pagina-curenta .grid_14 {
+        display: none; /* Asigură-te că grid_14 este afișat pe ecrane mici în pagina curentă */
+    }
+
+    /* Stiluri suplimentare pentru input-uri și liste în pagina curentă */
+    .pagina-curenta #myInput,
+    .pagina-curenta #myInput2 {
+        font-size: 14px; /* Stiluri pentru input-uri pe ecrane mici în pagina curentă */
+    }
+
+    .pagina-curenta .search-list {
+        font-size: 14px; /* Stiluri pentru lista de căutare pe ecrane mici în pagina curentă */
+    }
+    .alpha {
+        margin-left: 0; /* Elimină marginile stângi pentru elementele cu clasa alpha */
+    }
+
+    .omega {
+        margin-right: 0; /* Elimină marginile drepte pentru elementele cu clasa omega */
+    }
+
+    /* Lățimi grile */
+    .container_12 .grid_1,
+    .container_12 .grid_2,
+    .container_12 .grid_3,
+    .container_12 .grid_4,
+    .container_12 .grid_5,
+    .container_12 .grid_6,
+    .container_12 .grid_7,
+    .container_12 .grid_8,
+    .container_12 .grid_9,
+    .container_12 .grid_10,
+    .container_12 .grid_11,
+    .container_12 .grid_12,
+    .container_12 .grid_13, 
+    .container_12 .grid_14{
+        width: 100%; /* Lățime completă pentru grile pe ecrane mici */
+    }
+
+    /* Prefixuri și sufixuri */
+    .container_12 .prefix_1, .container_12 .prefix_2, .container_12 .prefix_3, .container_12 .prefix_4, .container_12 .prefix_5, .container_12 .prefix_6, .container_12 .prefix_7, .container_12 .prefix_8, .container_12 .prefix_9, .container_12 .prefix_10, .container_12 .prefix_11 {
+        padding-left: 0; /* Elimină padding-ul stâng pentru prefixuri pe ecrane mici */
+    }
+
+    .container_12 .suffix_1, .container_12 .suffix_2, .container_12 .suffix_3, .container_12 .suffix_4, .container_12 .suffix_5, .container_12 .suffix_6, .container_12 .suffix_7, .container_12 .suffix_8, .container_12 .suffix_9, .container_12 .suffix_10, .container_12 .suffix_11 {
+        padding-right: 0; /* Elimină padding-ul drept pentru sufixuri pe ecrane mici */
+    }
+
+    /* Push și pull */
+    .container_12 .push_1, .container_12 .push_2, .container_12 .push_3, .container_12 .push_4, .container_12 .push_5, .container_12 .push_6, .container_12 .push_7, .container_12 .push_8, .container_12 .push_9, .container_12 .push_10, .container_12 .push_11,
+    .container_12 .pull_1, .container_12 .pull_2, .container_12 .pull_3, .container_12 .pull_4, .container_12 .pull_5, .container_12 .pull_6, .container_12 .pull_7, .container_12 .pull_8, .container_12 .pull_9, .container_12 .pull_10, .container_12 .pull_11 {
+        left: 0; /* Elimină poziționarea pe orizontală pentru push și pull */
+    }
+
+    /* Clear */
+    .clear, .clearfix:after {
+        clear: both;
+        content: ' ';
+        display: block;
+        font-size: 0;
+        line-height: 0;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .clearfix {
+        display: block; /* Asigură că clearfix funcționează corect pe ecrane mici */
+    }
+
+    /* Specific pentru .grid_4 */
+    .grid_4 {
+        width: 100%; /* Lățimea completă pe ecrane mobile */
+        padding: 0; /* Elimină padding-ul pentru a folosi întreaga lățime */
+        box-sizing: border-box; /* Include padding-ul și border-ul în lățimea totală */
+        margin-bottom: 20px; /* Adaugă spațiu sub .grid_4 pentru a separa de alte elemente */
+    }
+    .grid_14{
+        order:-1;
+        width: 100%; /* Lățimea completă pe ecrane mobile */
+        padding: 0; /* Elimină padding-ul pentru a folosi întreaga lățime */
+        box-sizing: border-box; /* Include padding-ul și border-ul în lățimea totală */
+        margin-bottom: 20px; /* Adaugă spațiu sub .grid_4 pentru a separa de alte elemente */
+    }
+    
+    /* Stiluri pentru elementele de căutare */
+    .left-1 {
+        margin-bottom: 10px; /* Spațiu între titlu și inputul de căutare */
+    }
+
+    #myInput {
+        width: 100%; /* Lățimea completă a input-ului pe ecrane mobile */
+        font-size: 14px; /* Dimensiune font mai mică pentru input pe mobil */
+        padding: 10px; /* Padding mai mic pentru input */
+        box-sizing: border-box; /* Include padding-ul în lățimea totală */
+    }
+
+    #myUL {
+        list-style-type: none; /* Elimină bullet points */
+        padding: 0; /* Elimină padding-ul */
+        margin: 0; /* Elimină marginile */
+        text-align: center; /* Aliniază lista de rezultate la centru */
+    }
+
+    #myUL li {
+        border: 1px solid #ddd; /* Bordură pentru fiecare element */
+        background-color: #f6f6f6; /* Fundal pentru fiecare element */
+        padding: 10px; /* Padding mai mic pentru elemente */
+        font-size: 16px; /* Dimensiune font mai mică */
+        text-align: center; /* Așează textul în fiecare element la centru */
+        margin-bottom: 5px; /* Spațiu între elemente */
+    }
+    .slider img {
+    max-width: 100%; /* Imaginile nu vor depăși lățimea containerului */
+    height: auto; /* Menține raportul de aspect al imaginilor */
+}
+}
+
+

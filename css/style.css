@@ -1,0 +1,89 @@
+@charset "UTF-8";
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#controls {
+  margin: 20px;
+}
+
+/* #zoom-in, #zoom-out {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+} */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Ascunde scroll-ul implicit al paginii */
+}
+
+#svg-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Permite derularea */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+svg {
+  width: 3000px; /* Dimensiune mare pentru a crea derulare orizontală */
+  height: 3000px; /* Dimensiune mare pentru a crea derulare verticală */
+}
+
+.audio-play-button {
+  all: unset;
+  position: fixed;
+  right: 90px;
+  width: 125px;
+  height: 70px;
+  top: 10px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
+          box-shadow: rgb(29, 44, 59) 5px 20px 30px -10px;
+}
+
+.audio-play-button {
+  background-color: #006adb;
+  -webkit-box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
+          box-shadow: rgb(26, 40, 53) 5px 20px 30px -10px;
+}/*# sourceMappingURL=style.css.map */

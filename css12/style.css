@@ -1,0 +1,1326 @@
+/* Global properties ======================================================== */
+html, body {
+	width:100%;
+	padding:0;
+	margin:0;
+    overflow-x:hidden;
+}
+@keyframes jump-rotate {
+    0% { transform: translateY(0) scale(1); }
+    25% { transform: translateY(-20px) scale(1).1; } 
+    50% { transform: translateY(0) scale(1); } 
+    75% { transform: translateY(-10px) scale(1.05); } 
+    100% { transform: translateY(0) scale(1); }
+}
+.title-01{
+  margin-left: -120px;
+  animation: jump-rotate1 1s ease-in-out infinite;
+}
+.title-02{
+    margin-left: -120px;
+    margin-top: -60px;
+  }
+body {
+	font:14px/25px Arial, Helvetica, sans-serif;
+	color:#939393;
+	min-width:1264px;
+	background:#131313
+}
+.ic {
+	border:0;
+	float:right;
+	background:#fff;
+	color:#f00;
+	width:50%;
+	line-height:10px;
+	font-size:10px;
+	margin:-220% 0 0 0;
+	overflow:hidden;
+	padding:0
+}
+.main {
+	width:100%;
+	background:#272727;
+}
+/***********************************************************************/
+a {
+	text-decoration:none;
+	cursor:pointer;
+}
+a:hover {
+	text-decoration:none;
+}
+a.button {
+	background:#2098f5;
+	font-size:25px;
+	line-height:24px;
+	color:#fff;
+	display:flex;
+	padding:5px 23px 5px 23px;
+    justify-content: center;
+    align-items: center;
+}
+a.button:hover {
+	background:#131313;
+}
+a.link {
+	text-decoration:none;
+	cursor:pointer;
+	color:#f76300;
+}
+a.link:hover {
+	text-decoration:underline;
+}
+.color-1 {
+	color:#fff;
+}
+a.color-1:hover {
+	text-decoration:underline;
+}
+.font-3 {
+	font-size:17px;
+	line-height:33px;
+	color:#292929;
+}
+h2 {
+	font-size:36px;
+	line-height:45px;
+	color:#fff;
+	font-weight:normal;
+	letter-spacing:-1px;
+}
+h3 {
+	font-size:24px;
+	line-height:30px;
+	color:#fff;
+	font-weight:normal;
+}
+ul {
+	margin:0;
+	padding:0;
+	list-style-image:none;
+}
+ul.list-1 li {
+	padding:0px 0 0px 11px;
+	line-height:25px;
+	background:url(../images/marker.gif) 0 10px no-repeat;
+}
+ul.list-1 li a {
+	font-size:14px;
+	color:#fff;
+	line-height:25px;
+}
+ul.list-1 li a:hover {
+	color:#2098f5;
+}
+/* Media Queries pentru ecrane mici */
+
+/******************************************************************/
+.clear {
+	clear:both;
+	line-height:0;
+	font-size:0;
+	width:100%;
+}
+.wrapper {
+	width:100%;
+	overflow:hidden;
+	position:relative
+}
+.wrap {
+	overflow:hidden;
+	position:relative;
+}
+
+.extra-wrap {
+	overflow:hidden;
+}
+.fleft {
+	float:left;
+}
+.fright {
+	float:right;
+}
+.img-indent {
+	float:left;
+	margin:3px 30px 17px 0;
+}
+.last {
+	margin-right:0px !important;
+}
+.center-align{
+	text-align:center;
+}
+.left-align {
+	text-align: left;
+  }  
+.img-radius {
+	border-radius:4px;
+}
+.top-1 {
+	margin-top:37px;
+}
+.top-2 {
+	margin-top:29px;
+}
+.top-3 {
+	margin-top:21px;
+}
+.top-4 {
+	margin-top:31px;
+}
+.top-5 {
+	margin-top:12px;
+}
+.left-1 {
+	padding-left:30px;
+}
+.bot-0 {
+	padding-bottom:0 !important;
+	margin-bottom:0 !important;
+}
+.bot-1 {
+	margin-bottom:39px;
+}
+.bot-2 {
+	margin-bottom:29px;
+}
+.pad-1 {
+	margin:13px 0px 12px 0px;
+}
+.p{
+	size: 100px;
+}
+.p1 {
+	padding-bottom:25px;
+}
+.p2 {
+	padding-bottom:15px;
+}
+.p3 {
+	padding-bottom:12px;
+}
+.p4 {
+	padding-bottom:20px;
+}
+.p5 {
+	padding-bottom:23px;
+}
+.p6 {
+	padding-bottom:8px;
+}
+/*********************************header*************************************/
+header {
+	width:100%;
+	z-index:101;
+}
+header>div {
+	width:1264px;
+	margin:0 auto;
+	position:relative;
+}
+h1 {
+	position:absolute;
+	left:132px;
+	top:0px;
+	display:inline-block;
+	z-index:100;
+}
+.social-icons {
+	overflow:hidden;
+	text-align:right;
+	padding:17px 162px 13px 0
+}
+.social-icons span {
+	display:inline-block;
+	font-size:24px;
+	line-height:28px;
+	color:#fff;
+	margin:-1px 20px 0 0;
+	letter-spacing:-1px;
+}
+.social-icons a {
+	display:inline-block;
+	width:23px;
+	height:23px;
+	float:right;
+}
+.icon-1 {
+	background:url(../images/X1.png) 0 0 no-repeat;
+}
+.icon-2 {
+	background:url(../images/Fb1.png) 0 0 no-repeat;
+	margin-left:7px;
+}
+.icon-3 {
+	background:url(../images/Insta.png) 0 0 no-repeat;
+	margin-left:7px;
+}
+.icon-4{
+	background:url(../images/Yt.png) 0 0 no-repeat;
+	margin-left:7px;
+}
+.icon-5{
+	background:url(../images/Tk.png) 0 0 no-repeat;
+	margin-left:7px;
+}
+.social-icons a:hover {
+	background-color:#1e93f4;
+}
+nav {
+	position:absolute;
+	left:0px;
+	bottom:0;
+	z-index:100;
+	background:url(../images/nav-bg.png) 0 0 repeat;
+}
+ul.menu {
+	margin:0 29px 0 30px;
+}
+ul.menu li {
+	float:left;
+	line-height:35px;
+	margin:0px 0 0px 0px;
+	background:transparent;
+}
+ul.menu li a {
+	font-size:28px;
+	line-height:35px;
+	color:#fff;
+	display:block;
+	padding: 17px 33px 18px 33px;
+}
+ul.menu li:hover, ul.menu li.current {
+	background:#2098f5;
+}
+/* Media query pentru telefoane (lățimi de până la 767px) */
+
+/*********************************content*************************************/
+#content {
+	width:960px;
+	margin:0 auto;
+	padding-bottom:78px;
+}
+.line-1 {
+	background:url(../images/line.png) 0 bottom repeat-x;
+	padding-bottom:29px;
+	margin-bottom:24px;
+}
+.img-border {
+	border:#fff 4px solid;
+}
+.block-1>div {
+	float:left;
+	width:140px;
+	margin-right:2px;
+    margin-left: 4px;
+}
+.block-1>div h3 {
+	margin:14px 0 4px 0;
+    margin-left:0px;
+}
+
+.block-1>div a.button {
+	margin:18px 0 0px 0;
+}
+.form-1 {
+}
+.form-1 label {
+	font:14px/25px Arial, Helvetica, sans-serif;
+	color:#939393;
+	padding-bottom:5px;
+}
+.form-1 input {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#535353;
+	background:#131313;
+	padding:8px 10px 9px 15px;
+	outline: medium none;
+	width: 245px;
+	height:17px;
+	float:left;
+	margin-bottom:12px;
+}
+.form-1 .select-1 {
+	width:270px;
+	margin-bottom:12px;
+}
+.form-1 .select-2 {
+	width:128px;
+	margin-right:14px;
+	float:left;
+}
+.form-1>a.button {
+	margin-top:30px;
+	padding-left:36px;
+	padding-right:37px;
+}
+.lists {
+	overflow:hidden;
+}
+.lists ul {
+	float:left;
+	margin-right:15px;
+	width:120px;
+}
+.lists-2 {
+	margin:23px 0 23px 0;
+	overflow:hidden;
+}
+.lists-2 ul {
+	float:left;
+	margin-right:40px;
+	width:180px;
+}
+.block-2>a {
+	float:left;
+	margin-right:20px;
+	display:inline-block;
+}
+/****************************footer************************/
+footer {
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	text-align:center;
+	padding:32px 0 45px 0;
+	background:#131313;
+}
+footer p, footer a {
+	color:#939393;
+	
+}
+footer a:hover {
+	text-decoration:underline;
+}
+/**********************form**********************/
+dl {
+	margin:0px 0px 0 0px;
+}
+dl dt {
+}
+dl dd span {
+	display:block;
+	width:99px;
+	float:left;
+}
+dl dd {
+}
+dl dd a {
+}
+#form {
+	margin: 0px 0 0px 0px;
+	width:620px;
+}
+#form input {
+	background:#131313;
+	font: 14px Arial, Helvetica, sans-serif;
+	color:#535353;
+	padding:7px 10px 10px 15px;
+	outline: medium none;
+	width: 355px;
+	height:17px;
+	float:left;
+}
+#form textarea {
+	background:#131313;
+	font: 14px Arial, Helvetica, sans-serif;
+	color:#535353;
+	height: 246px;
+	outline: medium none;
+	overflow: auto;
+	padding: 7px 0px 0px 10px;
+	width: 610px;
+	resize:none;
+	margin:0px 0 0 0;
+	float:left;
+}
+#form label {
+	position:relative;
+	overflow:hidden;
+	display: block;
+	padding-bottom:12px;
+}
+#form label strong {
+	font-weight:normal;
+	display:block;
+	padding-bottom:5px;
+}
+.btns {
+	text-align:left;
+	width:620px;
+	padding-top:18px;
+}
+.btns a {
+	display:inline-block;
+	margin:0 20px 0 0px;
+}
+.handwritten {
+    font-family: Great Vibes;
+    font-size: 30px;
+}
+.written{
+	font-family: Comic Sans MS;
+	font-size: 30px;
+}
+.serif{
+	font-family:serif;
+	font-size:30px;
+}
+.poze{
+	margin-left: auto;
+  }
+.link {
+	float: left; 
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.link1 {
+	float:right;
+	margin-right:20px;
+}
+.link2 {
+	float:left;
+	margin-top:20px;
+	margin-left:41px;
+}
+.pozecontainer {
+    width: 200px; 
+    height: 300px; 
+    border: solid black; 
+    margin: 20px auto;
+	margin-left:80px;
+	justify-content: space-between;
+}
+.pozecontainer1 {
+    width: 125px; 
+    height: 300px; 
+    border: solid black; 
+    margin: 20px auto;
+	margin-left:20px;
+	justify-content: space-between;
+}
+.pozecontainer2 {
+    width: 200px; 
+    height: 300px; 
+    margin: 20px auto;
+	margin-left:130px;
+	justify-content: space-between;
+}	
+.pozecontainer3 {
+    width: 230px; 
+    height: 229px; 
+    margin: 20px auto;
+	margin-left:20px;
+	justify-content: space-between;
+}	
+.pozecontainer4 {
+    width: 215px; 
+    height: 235px; 
+    margin: 20px auto;
+	margin-left:-20px;
+	justify-content: space-between;
+}	
+.pozecontainer5 {
+    width: 350px; 
+    height: 280px; 
+    border: solid black; 
+    margin: 20px auto;
+	margin-left:60px;
+	justify-content: space-between;
+}
+.pozecontainer6 {
+    width: 200px; 
+    height: 300px; 
+    border: solid black; 
+    margin: 20px auto;
+	margin-left:60px;
+	justify-content: space-between;
+}
+.pozecontainer7 {
+    width: 350px; 
+    height: 280px; 
+    border: solid black; 
+    margin: 20px auto;
+	margin-left:20px;
+	justify-content: space-between;
+}
+.pozecontainer8 {
+    width: 400px; 
+    height: 280px; 
+    border: solid black; 
+    margin: 20px auto;
+	margin-left:20px;
+	justify-content: space-between;
+}
+.pozecontainerf {
+    width: 200px; 
+    height: 300px; 
+    border: solid black; 
+    margin: 20px auto;
+	margin-left:20px;
+	justify-content: space-between;
+}
+.row {
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+.center-align{
+	text-align:center;
+}
+.pozecontaineri{
+	width: 300px;
+	height: 250px;
+}
+.Poze1{
+	width: 300px;
+	height: 350px;
+	margin:5px;
+}
+.Poze2{
+	width: 230px; 
+    height: 335px; 
+    margin: 10px auto;
+	margin-left:70px;
+	justify-content: space-between;
+}
+.Poze3{
+	width: auto; 
+    height: 320px; 
+    margin: 10px auto;
+	margin-left:50px;
+	justify-content: space-between;
+}
+.Poze4{
+	width: auto; 
+    height: 320px; 
+    margin: 10px auto;
+	margin-left:50px;
+	justify-content: space-between;
+}
+a {
+    color: black; /* Set the default color for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+.class10{
+    width:300px;
+    height:75px;
+    border: 0;
+}
+.class9{
+    height:50px;
+    width:50px;
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 40px;
+    display: none; /* Ascuns implicit */
+    cursor: pointer;
+    width:500;
+    height:auto;
+    z-index: 1000; /* Asigură că butonul apare peste alte elemente */
+}
+.scroll-to-top:hover {
+    background-color: #000;
+}
+.grid_4 {
+    width: 25%;
+    /* Alte stiluri generale */
+}
+
+/* Stiluri specifice pentru pagina curentă */
+.pagina-curenta .grid_4 {
+    width: 100%; /* Adaptează la ecrane mici */
+    /* Alte stiluri specifice pentru pagina curentă */
+}
+
+.pagina-curenta #myInput, .pagina-curenta #myInput2 {
+    font-size: 14px;
+}
+
+.pagina-curenta .search-list {
+    font-size: 14px;
+}
+/* Stilizează întreaga bară de scroll */
+::-webkit-scrollbar {
+    width: 12px; /* Lățimea barei de scroll */
+}
+
+/* Stilizează "thumb"-ul, adică partea care se mișcă */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Culoarea "thumb"-ului */
+    border-radius: 6px; /* Raza de rotunjire a colțurilor */
+}
+
+/* Stilizează zona pe care "thumb"-ul se mișcă */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Culoarea fundalului zonei de scroll */
+}
+/* Media query pentru telefoane (lățimi de până la 767px) */
+/* Media query pentru telefoane (lățimi de până la 767px) */
+@media (max-width: 767px) {
+    /* Global properties */
+    html, body {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        font: 12px/20px Arial, Helvetica, sans-serif;
+        color: #939393;
+        min-width: auto;
+        background: #131313;
+    }
+    .pagina-curenta .grid_4 {
+        width: 100%;
+        margin-bottom: 20px; /* Spațiu între elemente */
+    }
+
+    .pagina-curenta #myInput, .pagina-curenta #myInput2 {
+        font-size: 14px;
+    }
+
+    .pagina-curenta .search-list {
+        font-size: 14px;
+    }
+    .alta-pagina .grid_4 {
+        /* Stiluri specifice pentru .grid_4 pe altă pagină */
+    }
+    .ic {
+        border: 0;
+        float: none;
+        background: #fff;
+        color: #f00;
+        width: 100%;
+        line-height: 20px;
+        font-size: 12px;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+    .pagina-curenta .grid_4 {
+        /* Stiluri specifice pentru grid_4 pe această pagină */
+        width: 100%;
+        /* Alte stiluri responsiv */
+      }
+      
+      .pagina-curenta #myInput, .pagina-curenta #myInput2 {
+        font-size: 14px;
+      }
+      
+      .pagina-curenta .search-list {
+        font-size: 14px;
+      }
+    .main {
+        width: 100%;
+        background: #272727;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a.button {
+        background: #2098f5;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        display: inline-block;
+        padding: 5px 15px;
+    }
+
+    a.button:hover {
+        background: #131313;
+    }
+
+    a.link {
+        text-decoration: none;
+        cursor: pointer;
+        color: #f76300;
+    }
+
+    a.link:hover {
+        text-decoration: underline;
+    }
+
+    .color-1 {
+        color: #fff;
+    }
+
+    a.color-1:hover {
+        text-decoration: underline;
+    }
+
+    .font-3 {
+        font-size: 14px;
+        line-height: 22px;
+        color: #292929;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+        color: #fff;
+        font-weight: normal;
+        letter-spacing: -0.5px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 24px;
+        color: #fff;
+        font-weight: normal;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul.list-1 li {
+        padding: 0px 0 0px 5px;
+        line-height: 20px;
+        background: url(../images/marker.gif) 0 5px no-repeat;
+    }
+
+    ul.list-1 li a {
+        font-size: 12px;
+        color: #fff;
+        line-height: 20px;
+    }
+
+    ul.list-1 li a:hover {
+        color: #2098f5;
+    }
+
+    .clear {
+        clear: both;
+        line-height: 0;
+        font-size: 0;
+        width: 100%;
+    }
+
+    .wrapper, .wrap, .extra-wrap {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .fleft, .fright {
+        float: none;
+    }
+
+    .img-indent {
+        float: none;
+        margin: 3px 0 17px 0;
+    }
+
+    .last {
+        margin-right: 0 !important;
+    }
+
+    .center-align {
+        text-align: center;
+    }
+
+    .left-align {
+        text-align: left;
+    }
+
+    .img-radius {
+        border-radius: 4px;
+    }
+
+    .top-1 {
+        margin-top: 37px;
+    }
+
+    .top-2 {
+        margin-top: 15px;
+    }
+
+    .top-3 {
+        margin-top: 10px;
+    }
+
+    .top-4 {
+        margin-top: 15px;
+    }
+
+    .top-5 {
+        margin-top: 10px;
+    }
+
+    .left-1 {
+        padding-left: 15px;
+    }
+
+    .bot-0 {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .bot-1 {
+        margin-bottom: 20px;
+    }
+
+    .bot-2 {
+        margin-bottom: 15px;
+    }
+
+    .pad-1 {
+        margin: 10px 0;
+    }
+
+    .p {
+        size: 100px;
+    }
+
+    .p1, .p2, .p3, .p4, .p5, .p6 {
+        padding-bottom: 10px; /* Ajustează padding-ul pentru consistență */
+    }
+
+    header {
+        width: 100%;
+        z-index: 101;
+    }
+
+    header > div {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    h1 {
+        position: static; /* Elimină poziționarea absolută */
+        left: auto;
+        top: auto;
+        display: block;
+        z-index: 100;
+    }
+
+    .social-icons {
+        overflow: hidden;
+        text-align: center; /* Centrează iconurile pe mobil */
+        padding: 10px 20px; /* Redu paddingul pentru a se potrivi mai bine pe ecranele mici */
+    }
+
+    .social-icons span {
+        display: inline-block;
+        font-size: 20px; /* Redu dimensiunea fontului pentru mobil */
+        line-height: 24px;
+        color: #fff;
+        margin: 0 10px; /* Reduce marginile laterale pentru a încadra iconurile mai bine */
+        letter-spacing: normal; /* Resetează spațierea literelor pentru mobil */
+    }
+
+    .social-icons a {
+        display: inline-block;
+        width: 23px; /* Mărime mai mare pentru iconuri pe mobil pentru a fi mai ușor de accesat */
+        height: 23px;
+        margin: 0 5px; /* Reduce spațierea între iconuri */
+        float: none; /* Elimină float-ul pentru mobil și folosește text-align: center pe container */
+    }
+
+    .social-icons a:hover {
+        background-color: #1e93f4;
+    }
+
+    nav {
+        position: static;
+        background: none;
+        padding: 10px 0;
+    }
+
+    ul.menu {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.menu li {
+        float: none;
+        display: block;
+        line-height: 30px;
+        margin: 0;
+        background: transparent;
+    }
+
+    ul.menu li a {
+        font-size: 16px;
+        line-height: 30px;
+        color: #fff;
+        display: block;
+        padding: 10px;
+    }
+
+    ul.menu li:hover, ul.menu li.current {
+        background: #2098f5;
+    }
+
+    #content {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .line-1 {
+        background: none;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .img-border {
+        border: #fff 2px solid; /* Reduce grosimea bordurii */
+    }
+
+    .block-1 > div {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .block-1 > div h3 {
+        margin: 10px 0;
+    }
+
+    .block-1 > div a.button {
+        margin: 10px 0;
+    }
+
+    .form-1 input, #form input, #form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-1 .select-1, .form-1 .select-2 {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    .form-1 > a.button {
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .lists, .lists-2 {
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .lists ul, .lists-2 ul {
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .block-2 > a {
+        float: none;
+        display: block;
+        margin: 10px 0;
+    }
+
+    footer {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        padding: 20px 0;
+        background: #131313;
+        text-align: center; /* Centrează tot conținutul footer-ului pe mobil */
+    }
+
+    .link img {
+        width: 100px; /* Dimensiune mai mică pentru imaginea agenției imobiliare */
+        height: auto; /* Menține proporțiile imaginii */
+        margin-bottom: 10px; /* Spațiu între imagini și text */
+    }
+
+    .link1 img {
+        width: 100px; /* Dimensiune mai mică pentru imaginea BA-MA */
+        height: auto; /* Menține proporțiile imaginii */
+        margin-bottom: 10px; /* Spațiu între imagini și text */
+    }
+
+    .written {
+        font-size: 14px; /* Dimensiune mai mică pentru text pe mobil */
+        margin: 5px 0; /* Spațiu între rânduri de text */
+        text-align:center;
+    }
+    .handwritten
+    {
+        font-size: 13px; /* Dimensiune mai mică pentru text pe mobil */
+        margin-left: 20px;
+        text-align: center;
+    }
+    footer p, footer a {
+        color: #939393;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    dl {
+        margin: 0;
+    }
+
+    dl dt {
+        /* Stiluri pentru dt, dacă necesar */
+    }
+
+    dl dd span {
+        display: block;
+        width: 100%;
+        float: none;
+    }
+
+    dl dd {
+        /* Stiluri pentru dd, dacă necesar */
+    }
+
+    dl dd a {
+        /* Stiluri pentru link-uri în dd, dacă necesar */
+    }
+
+    #form {
+        margin: 0;
+        width: 100%;
+    }
+
+    #form input {
+        background: #131313;
+        font: 12px Arial, Helvetica, sans-serif;
+        color: #535353;
+        padding: 7px 10px;
+        outline: none;
+        height: 17px;
+        float: none;
+    }
+
+    #form textarea {
+        background: #131313;
+        font: 12px Arial, Helvetica, sans-serif;
+        color: #535353;
+        height: auto; /* Ajustează înălțimea automat */
+        padding: 7px 10px;
+        width: 100%;
+        resize: none;
+        margin: 0;
+    }
+
+    #form label {
+        color: #fff;
+        display: block;
+        margin: 10px 0;
+    }
+
+    .pozecontainer, .pozecontainer1, .pozecontainer2, .pozecontainer3, 
+    .pozecontainer4, .pozecontainer5, .pozecontainer6, .pozecontainer7, 
+    .pozecontainer8, .pozecontainerf {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        border: none;
+    }
+
+    .row {
+        margin-bottom: 10px;
+    }
+
+    .center-align {
+        text-align: center;
+    }
+
+    .pozecontaineri {
+        width: 100%;
+        height: auto;
+    }
+
+    .news-item {
+        margin-bottom: 15px;
+    }
+
+    .news-item img {
+        width: 100%;
+        height: auto;
+    }
+	
+    .Poze1{
+        width: 400px;
+        height: auto;
+        margin:5px;
+    }
+    .class9{
+        height:35px;
+        width:35px;
+    }
+    .Poze2 {
+        width: 100%; /* Folosește întreaga lățime disponibilă */
+        height: auto; /* Menține proporțiile imaginii */
+        margin: 10px 0; /* Elimină margin-left și centrează imaginea */
+        margin-left: 0;
+        justify-content: center;
+    }
+    .Poze3 {
+        width: 100%; /* Setează lățimea la 100% pentru ecrane mici */
+        height: auto; /* Ajustează înălțimea proporțional */
+        margin: 10px 0;
+        margin-left: 0; /* Elimină margin-left pentru centrare */
+        justify-content: center;
+    }
+    .Poze4 {
+        width: 100%; /* Lățimea completă pentru telefoane */
+        height: auto; /* Ajustează automat înălțimea */
+        margin: 10px 0;
+        margin-left: 0; /* Elimină alinierea stângă */
+        justify-content: center;
+    }
+    /* Stilizează întreaga bară de scroll */
+::-webkit-scrollbar {
+    width: 12px; /* Lățimea barei de scroll */
+}
+
+/* Stilizează "thumb"-ul, adică partea care se mișcă */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Culoarea "thumb"-ului */
+    border-radius: 6px; /* Raza de rotunjire a colțurilor */
+}
+
+/* Stilizează zona pe care "thumb"-ul se mișcă */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Culoarea fundalului zonei de scroll */
+}
+    @media (max-width: 768px) {
+        .scroll-to-top {
+            bottom: 10px; /* Poziționat puțin mai sus pe telefoane */
+            right: 10px; /* Poziționat puțin mai în stânga pe telefoane */
+            padding: 12px; /* Padding ajustat pentru telefoane */
+            font-size: 16px; /* Font mai mic pentru ecrane mai mici */
+            width: 50px;
+            height:auto;
+        }
+}
+}
+/* Stilurile implicite (Desktop) */
+.pc-only {
+    display: flex;
+    align-items: center; /* Aliniere verticală */
+}
+
+.pc-only img {
+    width: 48%; /* Setează dimensiunea imaginilor pentru a împărți spațiul */
+}
+
+.pc-only img {
+    margin-right: 10px; /* Adaugă un mic spațiu între imagini */
+}
+
+/* Scoate margin-right de la ultima imagine */
+.pc-only img:last-child {
+    margin-right: 0;
+}
+.mobile-only {
+    display: none; /* Ascunde imaginile pentru mobile */
+}
+
+/* Media query pentru telefoane (max-width: 767px) */
+@media (max-width: 767px) {
+    .pc-only {
+        display: none; /* Ascunde imaginile pentru PC pe mobile */
+    }
+
+    .mobile-only {
+        display: block; /* Afișează imaginile pentru mobile */
+        text-align: center; /* Centrare imagine mobil */
+    }
+
+    .mobile-only img {
+        width: 100%; /* Imaginea mobil ocupă toată lățimea containerului */
+    }
+}
+
+.video-container {
+    position: relative;
+    margin-left: 50px;
+    width: 140%;
+    margin: auto;
+}
+.video-container1 {
+    position: relative;
+    margin-left: 50px;
+    width: 140%;
+    margin: auto;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+@keyframes jump-rotate1 {
+    0% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-20px) rotate(-7deg); } 
+    50% { transform: translateY(0) rotate(0deg); } 
+    75% { transform: translateY(-10px) rotate(7deg); } 
+    100% { transform: translateY(0) rotate(0deg); }
+}
+ .index-text{
+    font-size: 30px;
+    color:#fff !important;
+    margin-top:20px;
+    margin-left: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: jump-rotate 1s ease-in-out infinite;
+}
+.text-presentation-title{
+    font-size:40px;
+}
+.text-presentation-sub{
+    font-size:20px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; 
+}
+.download-btn {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
