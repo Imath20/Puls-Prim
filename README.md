@@ -1,1 +1,0 @@
-# Grafice Armonice
