@@ -1294,7 +1294,7 @@ button {
     margin-top:20px;
     margin-left: 50px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    animation: jump-rotate 1s ease-in-out infinite;
+    /* animation: jump-rotate 1s ease-in-out infinite; */
 }
 .text-presentation-title{
     font-size:40px;
