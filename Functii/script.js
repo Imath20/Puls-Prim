@@ -7,7 +7,7 @@ document.onmousemove = (e => {
     mouseY = e.clientY;
 });
 
-let func = "x";
+let func = "x / 5";
 
 const sin = Math.sin;
 const cos = Math.cos;
@@ -21,8 +21,8 @@ const PI = Math.PI, pi = PI;
 
 const evalFunc = () => {
     f = x => {
-        if(x === 'x')
-            x = 'x / 5';
+        // if(x === 'x')
+            // x = 'x / 5';
         const funcText = func.replace('x', x);
         let result = eval(funcText);
         return result * graph.amp;
