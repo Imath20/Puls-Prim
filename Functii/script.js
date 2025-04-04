@@ -21,10 +21,10 @@ const PI = Math.PI, pi = PI;
 
 const evalFunc = () => {
     f = x => {
+        if(x === 'x')
+            x = 'x / 5';
         const funcText = func.replace('x', x);
         let result = eval(funcText);
-        if(x === 'x')
-            result /= 5;
         return result * graph.amp;
     }
 };
