@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" media="screen" href="css12/grid_12.css">
 <link rel="stylesheet" type="text/css" media="screen" href="css12/slider-2.css">
 <link rel="stylesheet" type="text/css" media="screen" href="css12/jqtransform.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css12/sketchfab.css">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <script src="js/jquery-1.7.min.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
@@ -20,6 +21,7 @@
 <script src="js/tms-0.4.x.js"></script>
 <script src="js/jquery.jqtransform.js"></script>
 <script src="js/FF-cash.js"></script>
+<script src="js/sketchfab.js"></script>
 <script>
 $(document)
     .ready(function () {
@@ -121,8 +123,12 @@ $(document)
           <h2 class="top-1 p3">Seism prezentat printr-un joc</h2>
           <p class="row"><span>&#9734;<b>Apasa sageata dreapta, sageata stanga pentru a te misca in jurul obiectului 3d.</b></span></p>
           <p class="row"><span>&#9734;<b>Apasa Enter pentru a te duce la urmatorul eveniment.</b></span></p>
-          <iframe src="https://imath20.github.io/Cutremure-Joc/" width="960" height="700" style="border: none;"allowfullscreen></iframe>
-
+          <div class="model-container">
+          <iframe id="modelFrame" src="https://imath20.github.io/Cutremure-Joc/" width="960" height="700" style="border: none;"allowfullscreen></iframe>
+          <div id="modelDescription" class="sketchfab-info1">
+            🌀🌏〰Reprezentare Seism<br>🔁 Poți apasa stanga drepta pentru a te misca<br>🔁Poti apasa Enter pentru a vedea urmatoarea figura
+          </div>
+          </div>
       </div>
       <div class="grid_4">
         <div class="wrap">&nbsp;</div>

@@ -56,4 +56,16 @@
     max-width: 90%;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   }
+  .sketchfab-info1 {
+    position: absolute;
+    top: 10px;
+    right: -360px;
+    font-size: 16px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 10px 14px;
+    border-radius: 8px;
+    max-width: 90%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
   
